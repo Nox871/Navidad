@@ -143,6 +143,7 @@
             animation: shake 0.4s ease-in-out infinite;
         }
 
+
         @keyframes shake {
 
             0%,
@@ -254,6 +255,16 @@
                 transform: scaleX(1) scale(1.05);
             }
         }
+
+        .dialogue-wrapper {
+            position: relative;
+        }
+
+        .hint {
+            position: absolute;
+            top: -10px;
+            right: 12px;
+        }
     </style>
 </head>
 
@@ -265,8 +276,10 @@
         </div>
 
         <div class="dialogue-area">
-            <div class="hint" id="hint">toca para continuar</div>
-            <div class="dialogue-box" id="dialogue"></div>
+            <div class="dialogue-wrapper">
+                <div class="hint" id="hint">toca para continuar</div>
+                <div class="dialogue-box" id="dialogue"></div>
+            </div>
 
             <div class="gifts" id="gifts">
                 <div class="gift" data-gift="uno"><img src="regalo01.webp"></div>
